@@ -1,0 +1,87 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+The two classes below can be used to saved data in to our device memory
+SharedPreferences --> for reading
+SharedPreferences.Editor --> for writing to the memory of our device
+Intent is one of greatest android API aka class 
+Intent has many functionality as listed below:
+1. To launch our camera
+2. To send SMS
+3. To make call in our application
+4. To wire Activities together
+5. To pass data from one Activities to another
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+SharedPreferences sharedpreferenace 
+  SharedPreferences.Editor meditor;
+                meditor =  getSharedPreferences("my app", PRIVATE_MODE)
+				--------------------------------------------------------------------------------------
+				Abstraction is a process in which the tedious part of work is being hidden
+				for example motor users dont know the process in which the brake of motor or engine is being made by enigineer
+				their own is just to press pedal and it will stop. Another of real life scenario of abstraction is this word.
+				no human being knows how God created this world we just found our self in it.
+				However, in java abstraction can be achieved by using abstract class and interface
+				Encapulation: this is the process of protect class functions and properties from other class to have access to them
+				Other classes can only have access to these properties through setter and getter method 
+				An abstract function or method is a method with definition but no implementation. 
+				however, an interface is a collection of abstract methods
+				i.e an interface is like a container that holds multiple abstract methods i.e method without implementation but only definition
+				
+                An interface with no methods in it is referred to as a tagging interface
+				--------------------------------------------------------------------------------------------------------------------------
+				Serilization in java
+				converting object to sequence of bytes which contain inforamtion of the data type and inforamtion about the object it self .
+				a scenario that can be compared with serilization is when packet of inforamtionis being sent over network , the inforantion will be broken to 
+				pieces for easy flow of inforamtion over network which can be assembled together to form the entire inforamtion.
+				deserilization is the process of converting bytes of object back to original object.
+				the real life of scenario of serilization and deserilization is when a motor is being broken in to diffrent parts and ship to a country and 
+				is being assembled together in another country.
+				note: serilization and ]definition are platform independent.
+				The two major classes used in serilization are:
+				1.ObjectInputStream 
+				2.ObjectOutputStream
+				
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+				
+				 Switch myswich (Switch)findViewById(R.id.Name_of_the_control)
+				   myswich.setOnCheckedChangedListener(
+				     new Compound.Button.onCheckedChangedListener(){
+					    public void onCheckedChanged(CompoundButton buttonview,boolean isChecked){
+						
+						 if(isChecked){
+						   //action here
+						 }esle{
+						    //another action here
+						 
+						 }
+						
+						}
+					 
+					 
+					 
+					 }
+				   
+				   );
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
