@@ -61,6 +61,42 @@ SharedPreferences sharedpreferenace
 				   
 				   );
 				
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Pre Marshallow and Marshallow permision
+Pre Marshallow permision prompt users for permision before our app can be installed. 
+for unstance, if our apps requires to make use of gps, camera and so on  then during the process of downloading the 
+app, the app will pop up message to user. if the the user acepts the permision then the app will be installed otherwise 
+it will not be installesd. 
+
+masshalow permision whic was introduce in the year 2015 allow the users to i nstall our app without showing any error message during the istallation
+but when user launches the app the warning will be prompted out for the user permision
+----------------------------------------------------------------------------------------------------------------------------------------------------
+dialogue is a box that displayed to user for confirmation
+Dialogue box is more complicated than just ordinary layout 
+dailogue box is a class that has its own layouts and widgets  
+in android there are two ways to create dialogue:
+1.Dialogue class
+2.Fragment class. 
+the professional way of making dialogue in android is by using  the second option because the first method does not follow activity
+lifecyle which can lead to app crash. 
+steps to create dialogue in android 
+. create class in the same package name with the mainactivity class
+2.extend DailogueFragment clsss.
+3.override the method called onCreateDailogue
+4.AlertDialogue.Builder builder = new AlertDialogue(getActivity());
+Note: calling two or more methods on the same object on the same line is knnow as method chaining
+5. builder object of the class created is the major object used in creating dialogue
+6. buildr.setMessage() is used to show message to the user 
+7.builder.setPositiveButton() is used to add button to the dialogue box created.
+note: dilaogue box is similar to alert in javascript or confirm() function in javascript
+the method in number seven takes to arguments 
+1. The test that will be shown to user on the button
+2. anonymous class, new DialogueInterface.onClickListener(){
+public onClick(DialogueInterface dialogue , int id){}
+
+}
+8. Return the dilaogue by calling the create() method on the builder object
+9. Note the
 				
 				
 				
